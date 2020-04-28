@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemple</title>
     <style>
-      :root {
-        --background: #0f0f0f;
-      }
+   
 
       html,
       body {
         margin: 0;
         padding: 0;
-        background: var(--background);
-        color: white
+      
       }
       main {
         padding: 5px;
@@ -22,22 +19,22 @@
 
       section {
         min-height: 500px;
-        border: 1px solid white;
+        border: 1px solid black;
         width: 80vw;
         margin: 10px auto;
         display: block;
         position: relative;
         padding: 50px;
         border-radius: 8px;
-        color: white
+        color: black
 
       }
     </style>
-    <script src="scroll-page-progress.js"></script>
-    <link rel="stylesheet" href="scroll-page.progress.css">
+    <script src="index.js"></script>
   </head>
   <body>
-    <div page-scroll-progress></div>
+    <scroll-page-progress progress="#ffc800" complete="#00ff2b"></scroll-page-progress>
+
     <main>
         <h4>Exemple</h4>
         <section>
@@ -64,9 +61,5 @@
 
         <h4>If you here, it means its done and the color must be changed</h4>
         </main>
-    <script>
-         new ScrollPageProgress();
-       //Using a trigger to start new ScrollPageProgress().start();
-    </script>
   </body>
 </html>
